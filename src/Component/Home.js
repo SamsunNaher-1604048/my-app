@@ -3,6 +3,7 @@ import React from 'react'
 
 import Todos from './Todos'
 import style from './home.module.css'
+import NewTodo from './NewTodo';
 
 function Home() {
 
@@ -21,6 +22,7 @@ function Home() {
   return (
     <div  className={style.container}>
       <h1>Todo App</h1>
+      <NewTodo/>
       <Todos data={dummydata}/>
     </div>
   )
